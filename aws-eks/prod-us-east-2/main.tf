@@ -43,13 +43,6 @@ module "eks" {
       additional_tags = {
         ExtraTag = var.env
       }
-      taints = [
-        {
-          key    = "dedicated"
-          value  = "gpuGroup"
-          effect = "NO_SCHEDULE"
-        }
-      ]
       update_config = {
         max_unavailable_percentage = 33 # or set `max_unavailable`
       }
