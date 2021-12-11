@@ -1,0 +1,5 @@
+cluster_name    = "sinatra"
+cluster_version = "1.21"
+env             = "prod"
+region          = "us-east-2"
+vpc_name        = "eks-vpc"
