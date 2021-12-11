@@ -1,3 +1,3 @@
 mutability = "MUTABLE"
-name    = "prod-repo"
-region  = "us-east-2"
+name       = "prod-repo"
+region     = "us-east-2"
