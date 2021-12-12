@@ -55,7 +55,11 @@ resource "aws_iam_role_policy" "default" {
               "ecr:GetAuthorizationToken",
               "ecr:InitiateLayerUpload",
               "ecr:PutImage",
-              "ecr:UploadLayerPart"
+              "ecr:UploadLayerPart",
+              "eks:UpdateClusterConfig",
+              "eks:AccessKubernetesApi",
+              "eks:DescribeCluster",
+              "eks:ListClusters"
           ],
           "Resource": "*",
           "Effect": "Allow"
