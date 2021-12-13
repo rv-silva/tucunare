@@ -121,3 +121,25 @@ resource "aws_codebuild_project" "default" {
 #   server_type = "GITHUB"
 #   token       = var.github_token
 # }
+
+######### ADD THE WEBHOOKS WHEN USING A PRIVATE REPO #########
+# resource "aws_codebuild_webhook" "default" {
+#   project_name = aws_codebuild_project.default.name
+#   build_type   = "BUILD"
+#   filter_group {
+#     filter {
+#       type    = "EVENT"
+#       pattern = "PUSH"
+#     }
+
+#     filter {
+#       type    = "EVENT"
+#       pattern = "PULL_REQUEST_MERGED"
+#     }
+
+#     filter {
+#       type    = "HEAD_REF"
+#       pattern = "main"
+#     }
+#   }
+# }
