@@ -11,13 +11,9 @@ Source: https://github.com/terraform-aws-modules/terraform-aws-eks/
 
 Configuration in this directory creates EKS cluster with different features shown all-in-one cluster (e.g. Managed Node Groups, Worker Groups, Fargate, Spot instances, AWS Auth enabled).
 
-This example can be used to do smoke test.
-
-See configurations in other `examples` directories for more specific cases.
-
 ## Usage
 
-To run this example you need to execute:
+To run this deployment you need to execute:
 
 ```bash
 $ terraform init
@@ -25,7 +21,7 @@ $ terraform plan -var-file="<ENV>.tfvars"
 $ terraform apply -var-file="<ENV>.tfvars"
 ```
 
-Note that this example may create resources which cost money. Run `terraform destroy` when you don't need these resources.
+Note that this deployment may create resources which cost money. Run `terraform destroy` when you don't need these resources.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
